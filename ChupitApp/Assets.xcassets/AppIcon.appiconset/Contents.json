@@ -3,97 +3,97 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-20@2x.png",
+      "filename" : "AppIconTemplate_ChupitApp-20@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-20@3x.png",
+      "filename" : "AppIconTemplate_ChupitApp-20@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-29@2x.png",
+      "filename" : "AppIconTemplate_ChupitApp-29@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-29@3x.png",
+      "filename" : "AppIconTemplate_ChupitApp-29@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-40@2x.png",
+      "filename" : "AppIconTemplate_ChupitApp-40@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-40@3x.png",
+      "filename" : "AppIconTemplate_ChupitApp-40@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-60@2x.png",
+      "filename" : "AppIconTemplate_ChupitApp-60@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "ChupitAppIcon_def-60@3x.png",
+      "filename" : "AppIconTemplate_ChupitApp-60@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-20.png",
+      "filename" : "AppIconTemplate_ChupitApp-20.png",
       "scale" : "1x"
     },
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-20@2x-1.png",
+      "filename" : "AppIconTemplate_ChupitApp-20@2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-29.png",
+      "filename" : "AppIconTemplate_ChupitApp-29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-29@2x-1.png",
+      "filename" : "AppIconTemplate_ChupitApp-29@2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-40.png",
+      "filename" : "AppIconTemplate_ChupitApp-40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-40@2x-1.png",
+      "filename" : "AppIconTemplate_ChupitApp-40@2x-1.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-76.png",
+      "filename" : "AppIconTemplate_ChupitApp-76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "ChupitAppIcon_def-76@2x.png",
+      "filename" : "AppIconTemplate_ChupitApp-76@2x.png",
       "scale" : "2x"
     },
     {
