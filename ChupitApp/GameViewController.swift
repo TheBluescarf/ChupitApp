@@ -442,6 +442,20 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
+    func winOrLoseBeforeAnimation(value: String) {
+        switch value {
+        case "Win":
+            //win stuffs
+            break
+        case "Lose":
+            //lose stuffs
+            break
+        default:
+            break
+            //default stuffs
+        }
+    }
+    
     func deckTapped() {
         print("deck tapped")
         //deck premuto nella scena //// delegate

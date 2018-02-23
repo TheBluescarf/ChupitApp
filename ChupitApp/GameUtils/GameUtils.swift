@@ -36,6 +36,7 @@ public enum GameMode {
     @objc optional func switchController(type: String)
     @objc optional func goToReportController()
     @objc optional func deckTapped()
+    @objc optional func winOrLoseBeforeAnimation(value: String)
 }
 
 class GameUtils {

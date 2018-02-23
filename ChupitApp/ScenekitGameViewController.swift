@@ -99,6 +99,7 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
             DispatchQueue.main.async {
                 if (color == 0 && card.color == "red") || (color == 1 && card.color == "black") {
                     //some win animation stuffs
+                    self.delegate?.winOrLoseBeforeAnimation!(value: "Win")
                     Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true, block: { (timer) in
                         if self.game.spawnedBaloons >= 11 {
                             timer.invalidate()
@@ -112,6 +113,7 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
                         })
                     })
                 } else {
+                    self.delegate?.winOrLoseBeforeAnimation!(value: "Lose")
                     //some lose animation stuffs
                     self.delegate?.winPick!(win: false)
                     self.delegate?.hideChoices!(hide: false)
