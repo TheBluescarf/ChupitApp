@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4215148A202C9164000E7AB9 /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42151489202C9164000E7AB9 /* GameModeViewController.swift */; };
+		4215148C202D94A3000E7AB9 /* UserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215148B202D94A3000E7AB9 /* UserViewCell.swift */; };
+		42A8F0BC2029EEA800438B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0BB2029EEA800438B70 /* AppDelegate.swift */; };
+		42A8F0BE2029EEA800438B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0BD2029EEA800438B70 /* ViewController.swift */; };
+		42A8F0C12029EEA800438B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F0BF2029EEA800438B70 /* Main.storyboard */; };
+		42A8F0C32029EEA800438B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F0C22029EEA800438B70 /* Assets.xcassets */; };
+		42A8F0C62029EEA800438B70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A8F0C42029EEA800438B70 /* LaunchScreen.storyboard */; };
+		42A8F0D12029EEA800438B70 /* ChupitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0D02029EEA800438B70 /* ChupitAppTests.swift */; };
+		42A8F0DC2029EEA800438B70 /* ChupitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0DB2029EEA800438B70 /* ChupitAppUITests.swift */; };
+		42A8F0EA2029FE8C00438B70 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0E92029FE8C00438B70 /* MyUtils.swift */; };
+		42A8F0EC202AFB8C00438B70 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8F0EB202AFB8C00438B70 /* GameViewController.swift */; };
+		42CD008B203DB24400A68352 /* ZoomTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD008A203DB24400A68352 /* ZoomTransitioningDelegate.swift */; };
+		42CD008D203DB26700A68352 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD008C203DB26700A68352 /* PhotoCell.swift */; };
+		42CD008F203DB2DF00A68352 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD008E203DB2DF00A68352 /* DetailViewController.swift */; };
+		42E0019B203C2E0500F62639 /* Yellowr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E0019A203C2E0500F62639 /* Yellowr.ttf */; };
+		42F6408920306AF1004A5BB7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408820306AF1004A5BB7 /* ReportViewController.swift */; };
+		42F6408B203197AD004A5BB7 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408A203197AD004A5BB7 /* ReportTableViewCell.swift */; };
+		42F6408D2031A41D004A5BB7 /* InfoUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408C2031A41D004A5BB7 /* InfoUserViewController.swift */; };
+		932F0EF12037176D00195510 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F0EF02037176D00195510 /* MathUtils.swift */; };
+		932F0EF32038545C00195510 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F0EF22038545C00195510 /* DataModel.swift */; };
+		936AB679203C6C5D003D7D12 /* ArkitGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936AB678203C6C5C003D7D12 /* ArkitGameViewController.swift */; };
+		936AB67B203C6C67003D7D12 /* ScenekitGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936AB67A203C6C67003D7D12 /* ScenekitGameViewController.swift */; };
+		93CB56D120357F490026EBAF /* ChupitApp.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CB56D020357F490026EBAF /* ChupitApp.scnassets */; };
+		93CB56F62035AB210026EBAF /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CB56F52035AB210026EBAF /* GameUtils.swift */; };
+		93CB57162035DEB00026EBAF /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CB57152035DEB00026EBAF /* Animations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42A8F0CD2029EEA800438B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42A8F0B02029EEA800438B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42A8F0B72029EEA800438B70;
+			remoteInfo = ChupitApp;
+		};
+		42A8F0D82029EEA800438B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42A8F0B02029EEA800438B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42A8F0B72029EEA800438B70;
+			remoteInfo = ChupitApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42151489202C9164000E7AB9 /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
+		4215148B202D94A3000E7AB9 /* UserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewCell.swift; sourceTree = "<group>"; };
+		42A8F0B82029EEA800438B70 /* ChupitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChupitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8F0BB2029EEA800438B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42A8F0BD2029EEA800438B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42A8F0C02029EEA800438B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42A8F0C22029EEA800438B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42A8F0C52029EEA800438B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42A8F0C72029EEA800438B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A8F0CC2029EEA800438B70 /* ChupitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChupitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8F0D02029EEA800438B70 /* ChupitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChupitAppTests.swift; sourceTree = "<group>"; };
+		42A8F0D22029EEA800438B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A8F0D72029EEA800438B70 /* ChupitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChupitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8F0DB2029EEA800438B70 /* ChupitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChupitAppUITests.swift; sourceTree = "<group>"; };
+		42A8F0DD2029EEA800438B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A8F0E92029FE8C00438B70 /* MyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
+		42A8F0EB202AFB8C00438B70 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		42CD008A203DB24400A68352 /* ZoomTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitioningDelegate.swift; sourceTree = "<group>"; };
+		42CD008C203DB26700A68352 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		42CD008E203DB2DF00A68352 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		42E0019A203C2E0500F62639 /* Yellowr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yellowr.ttf; sourceTree = "<group>"; };
+		42F6408820306AF1004A5BB7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		42F6408A203197AD004A5BB7 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		42F6408C2031A41D004A5BB7 /* InfoUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUserViewController.swift; sourceTree = "<group>"; };
+		932F0EF02037176D00195510 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		932F0EF22038545C00195510 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		936AB678203C6C5C003D7D12 /* ArkitGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArkitGameViewController.swift; sourceTree = "<group>"; };
+		936AB67A203C6C67003D7D12 /* ScenekitGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenekitGameViewController.swift; sourceTree = "<group>"; };
+		93CB56D020357F490026EBAF /* ChupitApp.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ChupitApp.scnassets; sourceTree = "<group>"; };
+		93CB56F52035AB210026EBAF /* GameUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
+		93CB57152035DEB00026EBAF /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42A8F0B52029EEA800438B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0C92029EEA800438B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0D42029EEA800438B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A8F0AF2029EEA800438B70 = {
+			isa = PBXGroup;
+			children = (
+				42A8F0BA2029EEA800438B70 /* ChupitApp */,
+				42A8F0CF2029EEA800438B70 /* ChupitAppTests */,
+				42A8F0DA2029EEA800438B70 /* ChupitAppUITests */,
+				42A8F0B92029EEA800438B70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42A8F0B92029EEA800438B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F0B82029EEA800438B70 /* ChupitApp.app */,
+				42A8F0CC2029EEA800438B70 /* ChupitAppTests.xctest */,
+				42A8F0D72029EEA800438B70 /* ChupitAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42A8F0BA2029EEA800438B70 /* ChupitApp */ = {
+			isa = PBXGroup;
+			children = (
+				93CB56F42035AAD60026EBAF /* GameUtils */,
+				42A8F0BB2029EEA800438B70 /* AppDelegate.swift */,
+				932F0EF22038545C00195510 /* DataModel.swift */,
+				42A8F0BD2029EEA800438B70 /* ViewController.swift */,
+				42A8F0BF2029EEA800438B70 /* Main.storyboard */,
+				42A8F0C22029EEA800438B70 /* Assets.xcassets */,
+				42A8F0C42029EEA800438B70 /* LaunchScreen.storyboard */,
+				42A8F0C72029EEA800438B70 /* Info.plist */,
+				42A8F0E92029FE8C00438B70 /* MyUtils.swift */,
+				42A8F0EB202AFB8C00438B70 /* GameViewController.swift */,
+				42151489202C9164000E7AB9 /* GameModeViewController.swift */,
+				936AB678203C6C5C003D7D12 /* ArkitGameViewController.swift */,
+				4215148B202D94A3000E7AB9 /* UserViewCell.swift */,
+				42F6408820306AF1004A5BB7 /* ReportViewController.swift */,
+				42F6408A203197AD004A5BB7 /* ReportTableViewCell.swift */,
+				42F6408C2031A41D004A5BB7 /* InfoUserViewController.swift */,
+				936AB67A203C6C67003D7D12 /* ScenekitGameViewController.swift */,
+				42E0019A203C2E0500F62639 /* Yellowr.ttf */,
+				93CB56D020357F490026EBAF /* ChupitApp.scnassets */,
+				42CD008A203DB24400A68352 /* ZoomTransitioningDelegate.swift */,
+				42CD008C203DB26700A68352 /* PhotoCell.swift */,
+				42CD008E203DB2DF00A68352 /* DetailViewController.swift */,
+			);
+			path = ChupitApp;
+			sourceTree = "<group>";
+		};
+		42A8F0CF2029EEA800438B70 /* ChupitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F0D02029EEA800438B70 /* ChupitAppTests.swift */,
+				42A8F0D22029EEA800438B70 /* Info.plist */,
+			);
+			path = ChupitAppTests;
+			sourceTree = "<group>";
+		};
+		42A8F0DA2029EEA800438B70 /* ChupitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42A8F0DB2029EEA800438B70 /* ChupitAppUITests.swift */,
+				42A8F0DD2029EEA800438B70 /* Info.plist */,
+			);
+			path = ChupitAppUITests;
+			sourceTree = "<group>";
+		};
+		93CB56F42035AAD60026EBAF /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				93CB56F52035AB210026EBAF /* GameUtils.swift */,
+				93CB57152035DEB00026EBAF /* Animations.swift */,
+				932F0EF02037176D00195510 /* MathUtils.swift */,
+			);
+			path = GameUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42A8F0B72029EEA800438B70 /* ChupitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A8F0E02029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitApp" */;
+			buildPhases = (
+				42A8F0B42029EEA800438B70 /* Sources */,
+				42A8F0B52029EEA800438B70 /* Frameworks */,
+				42A8F0B62029EEA800438B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChupitApp;
+			productName = ChupitApp;
+			productReference = 42A8F0B82029EEA800438B70 /* ChupitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42A8F0CB2029EEA800438B70 /* ChupitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A8F0E32029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitAppTests" */;
+			buildPhases = (
+				42A8F0C82029EEA800438B70 /* Sources */,
+				42A8F0C92029EEA800438B70 /* Frameworks */,
+				42A8F0CA2029EEA800438B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42A8F0CE2029EEA800438B70 /* PBXTargetDependency */,
+			);
+			name = ChupitAppTests;
+			productName = ChupitAppTests;
+			productReference = 42A8F0CC2029EEA800438B70 /* ChupitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42A8F0D62029EEA800438B70 /* ChupitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A8F0E62029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitAppUITests" */;
+			buildPhases = (
+				42A8F0D32029EEA800438B70 /* Sources */,
+				42A8F0D42029EEA800438B70 /* Frameworks */,
+				42A8F0D52029EEA800438B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42A8F0D92029EEA800438B70 /* PBXTargetDependency */,
+			);
+			name = ChupitAppUITests;
+			productName = ChupitAppUITests;
+			productReference = 42A8F0D72029EEA800438B70 /* ChupitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42A8F0B02029EEA800438B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Marco Falanga";
+				TargetAttributes = {
+					42A8F0B72029EEA800438B70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					42A8F0CB2029EEA800438B70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42A8F0B72029EEA800438B70;
+					};
+					42A8F0D62029EEA800438B70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 42A8F0B72029EEA800438B70;
+					};
+				};
+			};
+			buildConfigurationList = 42A8F0B32029EEA800438B70 /* Build configuration list for PBXProject "ChupitApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42A8F0AF2029EEA800438B70;
+			productRefGroup = 42A8F0B92029EEA800438B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42A8F0B72029EEA800438B70 /* ChupitApp */,
+				42A8F0CB2029EEA800438B70 /* ChupitAppTests */,
+				42A8F0D62029EEA800438B70 /* ChupitAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42A8F0B62029EEA800438B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A8F0C62029EEA800438B70 /* LaunchScreen.storyboard in Resources */,
+				42E0019B203C2E0500F62639 /* Yellowr.ttf in Resources */,
+				42A8F0C32029EEA800438B70 /* Assets.xcassets in Resources */,
+				93CB56D120357F490026EBAF /* ChupitApp.scnassets in Resources */,
+				42A8F0C12029EEA800438B70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0CA2029EEA800438B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0D52029EEA800438B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42A8F0B42029EEA800438B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4215148A202C9164000E7AB9 /* GameModeViewController.swift in Sources */,
+				93CB56F62035AB210026EBAF /* GameUtils.swift in Sources */,
+				936AB679203C6C5D003D7D12 /* ArkitGameViewController.swift in Sources */,
+				42CD008B203DB24400A68352 /* ZoomTransitioningDelegate.swift in Sources */,
+				42A8F0EC202AFB8C00438B70 /* GameViewController.swift in Sources */,
+				42CD008D203DB26700A68352 /* PhotoCell.swift in Sources */,
+				42A8F0BE2029EEA800438B70 /* ViewController.swift in Sources */,
+				932F0EF32038545C00195510 /* DataModel.swift in Sources */,
+				42F6408D2031A41D004A5BB7 /* InfoUserViewController.swift in Sources */,
+				42CD008F203DB2DF00A68352 /* DetailViewController.swift in Sources */,
+				42F6408B203197AD004A5BB7 /* ReportTableViewCell.swift in Sources */,
+				932F0EF12037176D00195510 /* MathUtils.swift in Sources */,
+				93CB57162035DEB00026EBAF /* Animations.swift in Sources */,
+				4215148C202D94A3000E7AB9 /* UserViewCell.swift in Sources */,
+				42A8F0EA2029FE8C00438B70 /* MyUtils.swift in Sources */,
+				936AB67B203C6C67003D7D12 /* ScenekitGameViewController.swift in Sources */,
+				42A8F0BC2029EEA800438B70 /* AppDelegate.swift in Sources */,
+				42F6408920306AF1004A5BB7 /* ReportViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0C82029EEA800438B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A8F0D12029EEA800438B70 /* ChupitAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42A8F0D32029EEA800438B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A8F0DC2029EEA800438B70 /* ChupitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42A8F0CE2029EEA800438B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42A8F0B72029EEA800438B70 /* ChupitApp */;
+			targetProxy = 42A8F0CD2029EEA800438B70 /* PBXContainerItemProxy */;
+		};
+		42A8F0D92029EEA800438B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42A8F0B72029EEA800438B70 /* ChupitApp */;
+			targetProxy = 42A8F0D82029EEA800438B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42A8F0BF2029EEA800438B70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A8F0C02029EEA800438B70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42A8F0C42029EEA800438B70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A8F0C52029EEA800438B70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42A8F0DE2029EEA800438B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42A8F0DF2029EEA800438B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42A8F0E12029EEA800438B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42A8F0E22029EEA800438B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42A8F0E42029EEA800438B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChupitApp.app/ChupitApp";
+			};
+			name = Debug;
+		};
+		42A8F0E52029EEA800438B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChupitApp.app/ChupitApp";
+			};
+			name = Release;
+		};
+		42A8F0E72029EEA800438B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChupitApp;
+			};
+			name = Debug;
+		};
+		42A8F0E82029EEA800438B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
+				INFOPLIST_FILE = ChupitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChupitApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42A8F0B32029EEA800438B70 /* Build configuration list for PBXProject "ChupitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A8F0DE2029EEA800438B70 /* Debug */,
+				42A8F0DF2029EEA800438B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A8F0E02029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A8F0E12029EEA800438B70 /* Debug */,
+				42A8F0E22029EEA800438B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A8F0E32029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A8F0E42029EEA800438B70 /* Debug */,
+				42A8F0E52029EEA800438B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A8F0E62029EEA800438B70 /* Build configuration list for PBXNativeTarget "ChupitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A8F0E72029EEA800438B70 /* Debug */,
+				42A8F0E82029EEA800438B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42A8F0B02029EEA800438B70 /* Project object */;
+}
