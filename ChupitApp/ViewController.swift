@@ -108,8 +108,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                 let fillLayer = CAShapeLayer()
                 fillLayer.path = path.cgPath
                 fillLayer.fillRule = kCAFillRuleEvenOdd
-                fillLayer.fillColor = UIColor(white: 0.5, alpha: 0.5).cgColor
-                //fillLayer.opacity = 0.5
+                fillLayer.fillColor = UIColor(patternImage: #imageLiteral(resourceName: "subtback")).cgColor
+                //fillLayer.fillColor = UIColor(white: 0.5, alpha: 0.5).cgColor
+                fillLayer.opacity = 0.7
                 circleView.layer.addSublayer(fillLayer)
                 
 //                let circlePath = UIBezierPath(arcCenter: CGPoint(x: 100,y: 100), radius: CGFloat(20), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)

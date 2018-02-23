@@ -212,8 +212,9 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
             let fillLayer = CAShapeLayer()
             fillLayer.path = path.cgPath
             fillLayer.fillRule = kCAFillRuleEvenOdd
-            fillLayer.fillColor = UIColor(white: 0.5, alpha: 0.5).cgColor
-            //fillLayer.opacity = 0.5
+            fillLayer.fillColor = UIColor(patternImage: #imageLiteral(resourceName: "subtback")).cgColor
+            //fillLayer.fillColor = UIColor(white: 0.5, alpha: 0.5).cgColor
+            fillLayer.opacity = 0.7
             circleView.layer.addSublayer(fillLayer)
             
             let cameraButton = UIButton(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -460,7 +461,10 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     func deckTapped() {
-        print("deck tapped")
+        if leftButton.isHidden == false {
+            messageAnimation(string: "Make your choice first", substring: "")
+            highlightButtons()
+        }
         //deck premuto nella scena //// delegate
     }
     
@@ -561,6 +565,7 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         animateTracking()
         
+        messageLabel.adjustsFontSizeToFitWidth = true
         messageAnimation(string: "Let's start!", substring: "make your choice!")
         // Do any additional setup after loading the view.
     }
@@ -626,6 +631,17 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
             self.leftButton.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
             self.rightButton.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         }, completion: nil)
+    }
+    
+    func highlightButtons() {
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [.allowUserInteraction, .curveEaseOut], animations: {
+            self.leftButton.transform = CGAffineTransform(scaleX: 4, y: 4)
+            self.rightButton.transform = CGAffineTransform(scaleX: 4, y: 4)
+        }, completion: { finish in
+            self.leftButton.transform = CGAffineTransform.identity
+            self.rightButton.transform = CGAffineTransform.identity
+            self.animateButtons()
+        })
     }
     
     func setupNavBar() {

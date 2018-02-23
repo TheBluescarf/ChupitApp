@@ -62,13 +62,29 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-qC-dhi">
+                                <rect key="frame" x="104" y="20" width="167.5" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="30"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.4039215686" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GdN-1D-Hs5" firstAttribute="top" secondItem="mVC-mV-un3" secondAttribute="top" id="4eo-4U-tJI"/>
                             <constraint firstItem="GdN-1D-Hs5" firstAttribute="leading" secondItem="ei3-zD-nZa" secondAttribute="leading" id="6LS-OF-yBG"/>
                             <constraint firstItem="GdN-1D-Hs5" firstAttribute="trailing" secondItem="ei3-zD-nZa" secondAttribute="trailing" id="7T3-iR-3Qk"/>
+                            <constraint firstItem="Gxx-qC-dhi" firstAttribute="centerY" secondItem="ei3-zD-nZa" secondAttribute="centerY" id="F9r-qW-xrE"/>
                             <constraint firstItem="TlH-WG-WB5" firstAttribute="height" secondItem="mVC-mV-un3" secondAttribute="height" multiplier="0.5" id="RTn-mV-Yn7"/>
+                            <constraint firstItem="Gxx-qC-dhi" firstAttribute="height" secondItem="ei3-zD-nZa" secondAttribute="height" id="STz-Np-ybK"/>
                             <constraint firstItem="GdN-1D-Hs5" firstAttribute="bottom" secondItem="mVC-mV-un3" secondAttribute="bottom" id="UDi-ZW-nQj"/>
                             <constraint firstItem="B0r-l1-LC8" firstAttribute="centerX" secondItem="RJN-UD-KxI" secondAttribute="centerX" id="X9U-p8-c9Y"/>
                             <constraint firstItem="B0r-l1-LC8" firstAttribute="width" secondItem="RJN-UD-KxI" secondAttribute="width" id="bBP-il-u6t"/>
@@ -76,12 +92,18 @@
                             <constraint firstItem="TlH-WG-WB5" firstAttribute="centerY" secondItem="ei3-zD-nZa" secondAttribute="centerY" id="iTu-I7-VUs"/>
                             <constraint firstItem="B0r-l1-LC8" firstAttribute="height" secondItem="RJN-UD-KxI" secondAttribute="height" id="lvM-Tt-pL4"/>
                             <constraint firstItem="B0r-l1-LC8" firstAttribute="centerY" secondItem="RJN-UD-KxI" secondAttribute="centerY" id="oo3-t0-f8r"/>
+                            <constraint firstItem="Gxx-qC-dhi" firstAttribute="width" secondItem="ei3-zD-nZa" secondAttribute="width" multiplier="0.5" constant="-20" id="r77-LR-i9m"/>
                             <constraint firstItem="TlH-WG-WB5" firstAttribute="width" secondItem="mVC-mV-un3" secondAttribute="width" id="rBK-k7-5cB"/>
+                            <constraint firstItem="Gxx-qC-dhi" firstAttribute="centerX" secondItem="ei3-zD-nZa" secondAttribute="centerX" id="vRI-vA-Oa6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ei3-zD-nZa"/>
                     </view>
                     <connections>
+                        <outlet property="bgImageView" destination="GdN-1D-Hs5" id="Pwu-rT-kd2"/>
+                        <outlet property="iconImageView" destination="ilW-dt-VTb" id="alc-pt-7ZM"/>
+                        <outlet property="messageLabel" destination="Gxx-qC-dhi" id="1cg-Nq-xZ3"/>
                         <outlet property="pickerTextField" destination="B0r-l1-LC8" id="man-yl-CSg"/>
+                        <outlet property="playButton" destination="RJN-UD-KxI" id="atk-rA-f9P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgM-tc-AxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,36 +305,90 @@
                                     <constraint firstAttribute="height" constant="1" id="fec-Qe-eLA"/>
                                 </constraints>
                             </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFs-O9-ZMp">
+                                <rect key="frame" x="103" y="211.5" width="167.5" height="180.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="30"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.4039215686" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-aD-A2J">
-                                <rect key="frame" x="0.0" y="543" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="523" width="375" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BG-jB-048" userLabel="leftButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="17"/>
-                                        <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Red">
-                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonAction:" destination="6gk-ND-3Iz" eventType="touchUpInside" id="76A-IQ-Tkg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-nv-uz5" userLabel="rightButton">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="17"/>
-                                        <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Black">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonAction:" destination="6gk-ND-3Iz" eventType="touchUpInside" id="Zas-l3-Wew"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KW-Sz-Sjh">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BG-jB-048" userLabel="leftButton">
+                                                <rect key="frame" x="69" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="gN2-4y-bWM"/>
+                                                    <constraint firstAttribute="height" constant="50" id="nh8-F2-YMj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="17"/>
+                                                <size key="titleShadowOffset" width="1" height="1"/>
+                                                <state key="normal" title="Red">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonAction:" destination="6gk-ND-3Iz" eventType="touchUpInside" id="76A-IQ-Tkg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7BG-jB-048" firstAttribute="centerY" secondItem="4KW-Sz-Sjh" secondAttribute="centerY" id="3Ei-SO-COb"/>
+                                            <constraint firstItem="7BG-jB-048" firstAttribute="centerX" secondItem="4KW-Sz-Sjh" secondAttribute="centerX" id="wm5-au-7rP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iml-ve-ejo">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-nv-uz5" userLabel="rightButton">
+                                                <rect key="frame" x="69" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Y9C-D3-HZK"/>
+                                                    <constraint firstAttribute="width" constant="50" id="ffA-vx-mbl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="17"/>
+                                                <size key="titleShadowOffset" width="1" height="1"/>
+                                                <state key="normal" title="Black">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonAction:" destination="6gk-ND-3Iz" eventType="touchUpInside" id="Zas-l3-Wew"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lfA-nv-uz5" firstAttribute="centerY" secondItem="iml-ve-ejo" secondAttribute="centerY" id="8Ok-AP-306"/>
+                                            <constraint firstItem="lfA-nv-uz5" firstAttribute="centerX" secondItem="iml-ve-ejo" secondAttribute="centerX" id="SMo-1E-Qen"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dCp-bN-5R0"/>
+                                    <constraint firstAttribute="height" constant="50" id="dCp-bN-5R0"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-YQ-DLg">
@@ -348,15 +424,6 @@
                                     <action selector="addPlayerAction:" destination="6gk-ND-3Iz" eventType="touchUpInside" id="kQd-Kw-m9c"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFs-O9-ZMp">
-                                <rect key="frame" x="103.5" y="0.5" width="167.5" height="603"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="30"/>
-                                <color key="textColor" red="0.93333333330000001" green="0.4039215686" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -375,7 +442,7 @@
                             <constraint firstItem="qRh-m4-XiK" firstAttribute="trailing" secondItem="cz3-aD-A2J" secondAttribute="trailing" id="My8-uT-Anq"/>
                             <constraint firstItem="yVT-9r-yZD" firstAttribute="top" secondItem="xYU-sd-mGx" secondAttribute="top" id="PdL-Ne-8rB"/>
                             <constraint firstItem="zdY-YQ-DLg" firstAttribute="top" secondItem="tHI-EB-ir6" secondAttribute="top" id="TYx-vE-CNv"/>
-                            <constraint firstItem="bFs-O9-ZMp" firstAttribute="height" secondItem="xYU-sd-mGx" secondAttribute="height" id="Uma-7w-RXE"/>
+                            <constraint firstItem="bFs-O9-ZMp" firstAttribute="height" secondItem="xYU-sd-mGx" secondAttribute="height" multiplier="0.3" id="Uma-7w-RXE"/>
                             <constraint firstItem="cz3-aD-A2J" firstAttribute="bottom" secondItem="xYU-sd-mGx" secondAttribute="bottom" constant="-30" id="VLK-9L-Hf4"/>
                             <constraint firstItem="tHI-EB-ir6" firstAttribute="centerX" secondItem="bz2-KB-rGl" secondAttribute="centerX" id="VzD-3g-Q4V"/>
                             <constraint firstItem="bz2-KB-rGl" firstAttribute="trailing" secondItem="xYU-sd-mGx" secondAttribute="trailing" id="YJH-0e-RR0"/>
