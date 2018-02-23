@@ -10,9 +10,50 @@ import UIKit
 
 class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var bgImageView: UIImageView!
+    
+    @IBOutlet weak var iconImageView: UIImageView!
+    
     var doneButton = UIButton()
     
     var isPickerOn = false
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    func messageAnimation(string: String, substring: String) {
+        messageLabel.isHidden = false
+        let myString = string + "\n" + substring
+        let attributedString = NSMutableAttributedString(string: myString)
+        
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "YellowjacketRotate", size: 20), range: NSMakeRange(0, string.count))
+        
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "YellowjacketRotate", size: 10), range: NSMakeRange(string.count + 1, substring.count))
+        
+        messageLabel.attributedText = attributedString
+        
+        UIView.animate(withDuration: 4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [.curveEaseOut], animations: {
+            self.messageLabel.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }, completion: { finish in
+            //self.messageLabel.text = ""
+            //self.messageLabel.isHidden = true
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                self.messageLabel.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+            }, completion: { (finish) in
+                self.messageLabel.text = ""
+                self.messageLabel.isHidden = true
+                
+                let transition = CATransition()
+                transition.type = kCATransitionFade
+                transition.duration = 0.2
+                
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "FirstVC") as? ViewController {
+                    self.view.window?.layer.add(transition, forKey: kCATransition)
+                    self.view.window?.rootViewController = controller
+                }
+            })
+        })
+    }
     
     @IBAction func textField(_ sender: UITextField) {
         //let tintColor: UIColor = UIColor(red: 101.0/255.0, green: 98.0/255.0, blue: 164.0/255.0, alpha: 1.0)
@@ -47,14 +88,11 @@ class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerVie
     }
     
     @objc func doneButton(_ sender: UIButton) {
-        let transition = CATransition()
-        transition.type = kCATransitionFade
-        transition.duration = 0.2
-        
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "FirstVC") as? ViewController {
-            self.view.window?.layer.add(transition, forKey: kCATransition)
-            self.view.window?.rootViewController = controller
-        }
+        pickerTextField.resignFirstResponder()
+        iconImageView.alpha = 0
+        bgImageView.alpha = 0
+        playButton.alpha = 0
+        messageAnimation(string: "Selfie Time", substring: "be prepared!\nTake your selfies!")
     }
     
     @objc func cancelPicker(_ sender: UIButton) {

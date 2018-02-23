@@ -8,6 +8,19 @@
 
 import UIKit
 
+extension UIView {
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
+    }
+}
+
 extension UIColor {
     static let myOrange = UIColor(red: 238/255, green: 103/255, blue: 61/255, alpha: 1)
 }
