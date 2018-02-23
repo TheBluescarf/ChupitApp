@@ -36,15 +36,14 @@
                                             <constraint firstAttribute="height" constant="164" id="2lA-MZ-L21"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Don't make a fuss," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDL-a8-0rS">
-                                        <rect key="frame" x="0.0" y="184" width="375" height="76"/>
-                                        <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="30"/>
-                                        <color key="textColor" red="0.93333333330000001" green="0.4039215686" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="shadowOffset" width="1" height="1"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="raise your glass!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vX-OY-RMI">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-Ws-n4g">
+                                        <rect key="frame" x="56.5" y="184" width="262.5" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="262.5" id="RJE-Im-lps"/>
+                                            <constraint firstAttribute="height" constant="76" id="qdt-DN-nXN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="raise your glass!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vX-OY-RMI">
                                         <rect key="frame" x="0.0" y="280" width="375" height="43.5"/>
                                         <fontDescription key="fontDescription" name="YellowjacketRotate" family="Yellowjacket Rotate" pointSize="30"/>
                                         <color key="textColor" red="0.93333333330000001" green="0.4039215686" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,9 +54,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9vX-OY-RMI" secondAttribute="trailing" id="Ijd-Mi-OLn"/>
-                                    <constraint firstAttribute="trailing" secondItem="MDL-a8-0rS" secondAttribute="trailing" id="U8k-Hx-lX7"/>
-                                    <constraint firstItem="MDL-a8-0rS" firstAttribute="leading" secondItem="W0d-aH-24h" secondAttribute="leading" id="b6t-s4-hun"/>
                                     <constraint firstItem="9vX-OY-RMI" firstAttribute="leading" secondItem="W0d-aH-24h" secondAttribute="leading" id="pG0-4g-NFw"/>
+                                    <constraint firstItem="dkd-Ws-n4g" firstAttribute="width" secondItem="W0d-aH-24h" secondAttribute="width" multiplier="0.7" id="uH0-aH-g1G"/>
                                     <constraint firstAttribute="bottom" secondItem="9vX-OY-RMI" secondAttribute="bottom" id="uoj-A8-cAO"/>
                                 </constraints>
                             </stackView>
@@ -83,6 +81,7 @@
     </scenes>
     <resources>
         <image name="ChupitAppicon" width="309" height="317"/>
+        <image name="slogan" width="647" height="144"/>
         <image name="subtback" width="1240" height="1754"/>
     </resources>
 </document>
