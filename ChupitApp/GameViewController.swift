@@ -10,10 +10,11 @@ import UIKit
 
 class GameViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, ChildToParentProtocol {
     
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var trackingLabel: UILabel!
     @IBOutlet weak var trackingView: UIView!
     
-    @IBOutlet weak var photoButton: UIButton!
+    //@IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     
     weak var interactionDelegate: GameInteractionProtocol?
@@ -132,7 +133,7 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         picker.dismiss(animated: true, completion: nil)
     }
     
-    @objc func addPlayerAction(_ sender: UIButton) {
+    @IBAction func addPlayerAction(_ sender: UIButton) {
         let alert = UIAlertController(title: "Do you want to add a new player?", message: "It will be the next one!", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Add", style: .default, handler: { action in
@@ -418,12 +419,12 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         case true:
             rightButton.isHidden = true
             leftButton.isHidden = true
-            photoButton.isHidden = true
+            //photoButton.isHidden = true
         case false:
             rightButton.isHidden = false
             leftButton.isHidden = false
             if GameUtils.shared.mode != .ARKit {
-                photoButton.isHidden = false
+                //photoButton.isHidden = false
             }
         }
     }
@@ -436,8 +437,10 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func winPick(win: Bool) {
         switch win {
         case true:
+            messageAnimation(string: "You win!", substring: "Next player...")
             winAnimation()
         case false:
+            messageAnimation(string: "You lose!", substring: "Have your chupito and try again!")
             loseAnimation()
         }
     }
@@ -505,6 +508,8 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         //usernameLabel.text = Singleton.shared.users[count].username
         self.title = Singleton.shared.users[count].username
+        
+        messageAnimation(string: "\(Singleton.shared.users[count].username)", substring: " it's up to you!")
     }
     
     func endGame() {
@@ -541,12 +546,39 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         animateButtons()
         
         animateTracking()
+        
+        messageAnimation(string: "Let's start!", substring: "make your choice!")
         // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func messageAnimation(string: String, substring: String) {
+        messageLabel.isHidden = false
+        let myString = string + "\n" + substring
+        let attributedString = NSMutableAttributedString(string: myString)
+        
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "YellowjacketRotate", size: 20), range: NSMakeRange(0, string.count))
+        
+        attributedString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "YellowjacketRotate", size: 10), range: NSMakeRange(string.count + 1, substring.count))
+        
+        messageLabel.attributedText = attributedString
+        
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [.curveEaseOut], animations: {
+            self.messageLabel.transform = CGAffineTransform(scaleX: 2, y: 2)
+        }, completion: { finish in
+            //self.messageLabel.text = ""
+            //self.messageLabel.isHidden = true
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                self.messageLabel.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+            }, completion: { (finish) in
+                self.messageLabel.text = ""
+                self.messageLabel.isHidden = true
+            })
+        })
     }
     
     func animateTracking() {
@@ -583,8 +615,8 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     func setupNavBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addPlayerAction(_:)))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Exit", style: .plain, target: self, action: #selector(leaveTable(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(takePictureAction(_:)))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Quit", style: .plain, target: self, action: #selector(leaveTable(_:)))
     }
 }
 
