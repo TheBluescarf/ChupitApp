@@ -21,9 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Match a picture to each user</string>
+	<string>Match a picture to each player</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Save optionally the pictures you take</string>
+	<string>Save the pictures you take</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
