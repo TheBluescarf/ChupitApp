@@ -38,12 +38,6 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
         // Set the view's delegate
         par = parent as! GameViewController
         par.interactionDelegate = self
-//        Sounds.shared.lowerVolume()
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
-//            Sounds.shared.playBackgroundMusic(fileName: "Chupito_Tunz.mp3")
-//        })
-        
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
