@@ -127,6 +127,7 @@ class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         picker.delegate = self
         picker.dataSource = self
         Singleton.shared.playersNumber = 2
+        Sounds.shared.playBackgroundMusic(fileName: "Soft_Chupito.mp3")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cancelPicker(_:)))
         self.view.addGestureRecognizer(tapGesture)

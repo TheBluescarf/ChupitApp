@@ -150,9 +150,6 @@ class InfoUserViewController: UIViewController, DetailsDelegate, UICollectionVie
     override func viewDidAppear(_ animated: Bool) {
         configNavbar()
         collectionView?.reloadData()
-        
-        
-        let myUsers = Singleton.shared.users.sorted()
     }
     
     override func viewWillAppear(_ animated: Bool) {

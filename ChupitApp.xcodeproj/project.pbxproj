@@ -29,6 +29,9 @@
 		932F0EF32038545C00195510 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932F0EF22038545C00195510 /* DataModel.swift */; };
 		936AB679203C6C5D003D7D12 /* ArkitGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936AB678203C6C5C003D7D12 /* ArkitGameViewController.swift */; };
 		936AB67B203C6C67003D7D12 /* ScenekitGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936AB67A203C6C67003D7D12 /* ScenekitGameViewController.swift */; };
+		939F6221204024CA00ABF251 /* Soft_Chupito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939F621F204024CA00ABF251 /* Soft_Chupito.mp3 */; };
+		939F6222204024CA00ABF251 /* Chupito_Tunz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939F6220204024CA00ABF251 /* Chupito_Tunz.mp3 */; };
+		93C13DEE204023C2005B3110 /* SoundsSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C13DED204023C2005B3110 /* SoundsSingleton.swift */; };
 		93CB56D120357F490026EBAF /* ChupitApp.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CB56D020357F490026EBAF /* ChupitApp.scnassets */; };
 		93CB56F62035AB210026EBAF /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CB56F52035AB210026EBAF /* GameUtils.swift */; };
 		93CB57162035DEB00026EBAF /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CB57152035DEB00026EBAF /* Animations.swift */; };
@@ -80,6 +83,9 @@
 		932F0EF22038545C00195510 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		936AB678203C6C5C003D7D12 /* ArkitGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArkitGameViewController.swift; sourceTree = "<group>"; };
 		936AB67A203C6C67003D7D12 /* ScenekitGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenekitGameViewController.swift; sourceTree = "<group>"; };
+		939F621F204024CA00ABF251 /* Soft_Chupito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Soft_Chupito.mp3; sourceTree = "<group>"; };
+		939F6220204024CA00ABF251 /* Chupito_Tunz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chupito_Tunz.mp3; sourceTree = "<group>"; };
+		93C13DED204023C2005B3110 /* SoundsSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsSingleton.swift; sourceTree = "<group>"; };
 		93CB56D020357F490026EBAF /* ChupitApp.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ChupitApp.scnassets; sourceTree = "<group>"; };
 		93CB56F52035AB210026EBAF /* GameUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
 		93CB57152035DEB00026EBAF /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
@@ -177,12 +183,23 @@
 			path = ChupitAppUITests;
 			sourceTree = "<group>";
 		};
+		93C13DEF204023C5005B3110 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				939F6220204024CA00ABF251 /* Chupito_Tunz.mp3 */,
+				939F621F204024CA00ABF251 /* Soft_Chupito.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		93CB56F42035AAD60026EBAF /* GameUtils */ = {
 			isa = PBXGroup;
 			children = (
+				93C13DEF204023C5005B3110 /* Sounds */,
 				93CB56F52035AB210026EBAF /* GameUtils.swift */,
 				93CB57152035DEB00026EBAF /* Animations.swift */,
 				932F0EF02037176D00195510 /* MathUtils.swift */,
+				93C13DED204023C2005B3110 /* SoundsSingleton.swift */,
 			);
 			path = GameUtils;
 			sourceTree = "<group>";
@@ -294,11 +311,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939F6221204024CA00ABF251 /* Soft_Chupito.mp3 in Resources */,
 				42A8F0C62029EEA800438B70 /* LaunchScreen.storyboard in Resources */,
 				42E0019B203C2E0500F62639 /* Yellowr.ttf in Resources */,
 				42A8F0C32029EEA800438B70 /* Assets.xcassets in Resources */,
 				93CB56D120357F490026EBAF /* ChupitApp.scnassets in Resources */,
 				42A8F0C12029EEA800438B70 /* Main.storyboard in Resources */,
+				939F6222204024CA00ABF251 /* Chupito_Tunz.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +360,7 @@
 				936AB67B203C6C67003D7D12 /* ScenekitGameViewController.swift in Sources */,
 				42A8F0BC2029EEA800438B70 /* AppDelegate.swift in Sources */,
 				42F6408920306AF1004A5BB7 /* ReportViewController.swift in Sources */,
+				93C13DEE204023C2005B3110 /* SoundsSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSAVF6Q6B6;
+				DEVELOPMENT_TEAM = 5928G56A2S;
 				INFOPLIST_FILE = ChupitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;
@@ -522,7 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSAVF6Q6B6;
+				DEVELOPMENT_TEAM = 5928G56A2S;
 				INFOPLIST_FILE = ChupitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;

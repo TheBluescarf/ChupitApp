@@ -197,6 +197,12 @@ class ReportViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         
         navigationController?.isToolbarHidden = true
+        Sounds.shared.lowerVolume()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            Sounds.shared.playBackgroundMusic(fileName: "Soft_Chupito.mp3")
+        })
+
     }
     
     override func viewDidAppear(_ animated: Bool) {

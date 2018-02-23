@@ -34,7 +34,15 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
         setupScene()
         setupNodes()
         game.mode = .SceneKit
-        
+        if let currentMusic = Sounds.shared.backgroundMusicPlayer.url?.lastPathComponent {
+            if currentMusic != "Chupito_Tunz.mp3" {
+                Sounds.shared.lowerVolume()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                    Sounds.shared.playBackgroundMusic(fileName: "Chupito_Tunz.mp3")
+                })
+            }
+        }
+       
         // Do any additional setup after loading the view.
         
     }
