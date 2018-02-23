@@ -437,10 +437,10 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func winPick(win: Bool) {
         switch win {
         case true:
-            messageAnimation(string: "You win!", substring: "Next player...")
+            
             winAnimation()
         case false:
-            messageAnimation(string: "You lose!", substring: "Have your chupito and try again!")
+            
             loseAnimation()
         }
     }
@@ -448,10 +448,10 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func winOrLoseBeforeAnimation(value: String) {
         switch value {
         case "Win":
-            //win stuffs
+            messageAnimation(string: "You win!", substring: "Next player...")
             break
         case "Lose":
-            //lose stuffs
+            messageAnimation(string: "You lose!", substring: "Have your chupito and try again!")
             break
         default:
             break
