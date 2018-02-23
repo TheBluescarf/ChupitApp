@@ -35,6 +35,7 @@ public enum GameMode {
     @objc optional func showTrackingLabel(hide: Bool)
     @objc optional func switchController(type: String)
     @objc optional func goToReportController()
+    @objc optional func deckTapped()
 }
 
 class GameUtils {

@@ -157,6 +157,8 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
         if let result = hitTest.first {
             if result.node.name == "SCNCube" {
                 delegate?.switchController!(type: "AR")
+            } else if result.node.name == "deck_full" {
+                delegate?.deckTapped!()
             }
         }
     }
