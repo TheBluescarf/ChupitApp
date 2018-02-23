@@ -209,6 +209,10 @@ class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         self.animateTextField(textField: textField, up:false)
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     /*
      // MARK: - Navigation
      

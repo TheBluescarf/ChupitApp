@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6aD-TN-CYP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B9C-4N-mvM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -894,10 +894,73 @@
             </objects>
             <point key="canvasLocation" x="5137" y="678"/>
         </scene>
+        <!--Notice View Controller-->
+        <scene sceneID="Ecj-4l-cig">
+            <objects>
+                <viewController id="B9C-4N-mvM" customClass="NoticeViewController" customModule="ChupitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4h3-a0-qCj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3p-Lk-dz3">
+                                <rect key="frame" x="24" y="44" width="327" height="599"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="NOTICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-2m-YCF">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please remember to drink responsibly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vky-rO-dEn">
+                                        <rect key="frame" x="0.0" y="120" width="327" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning" translatesAutoresizingMaskIntoConstraints="NO" id="zXE-Vt-UBY">
+                                        <rect key="frame" x="0.0" y="239.5" width="327" height="120"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you drink do not drive!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mh-fs-e3G">
+                                        <rect key="frame" x="0.0" y="359.5" width="327" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZx-j2-NZ1">
+                                        <rect key="frame" x="0.0" y="479" width="327" height="120"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="GOT IT">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="noticeAction:" destination="B9C-4N-mvM" eventType="touchUpInside" id="Ngk-Q8-f99"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HG5-QP-skX" firstAttribute="trailing" secondItem="Q3p-Lk-dz3" secondAttribute="trailing" constant="24" id="D6E-AN-I35"/>
+                            <constraint firstItem="HG5-QP-skX" firstAttribute="bottom" secondItem="Q3p-Lk-dz3" secondAttribute="bottom" constant="24" id="h0M-SA-NaM"/>
+                            <constraint firstItem="Q3p-Lk-dz3" firstAttribute="top" secondItem="HG5-QP-skX" secondAttribute="top" constant="24" id="rUn-UR-B3W"/>
+                            <constraint firstItem="Q3p-Lk-dz3" firstAttribute="leading" secondItem="HG5-QP-skX" secondAttribute="leading" constant="24" id="ydR-AD-2uE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HG5-QP-skX"/>
+                    </view>
+                    <connections>
+                        <outlet property="noticeButton" destination="nZx-j2-NZ1" id="Ag3-ZE-96X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3OD-5B-uVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1292" y="134"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ChupitAppicon" width="309" height="317"/>
         <image name="exclusion" width="1676" height="1768"/>
         <image name="subtback" width="1240" height="1754"/>
+        <image name="warning" width="135" height="117"/>
     </resources>
 </document>

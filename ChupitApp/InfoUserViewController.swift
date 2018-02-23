@@ -270,11 +270,9 @@ class InfoUserViewController: UIViewController, DetailsDelegate, UICollectionVie
         return sectionInsets.left
     }
     
-    
-    
-    
-    
-    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
 

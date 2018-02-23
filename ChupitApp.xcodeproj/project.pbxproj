@@ -22,6 +22,7 @@
 		42CD008D203DB26700A68352 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD008C203DB26700A68352 /* PhotoCell.swift */; };
 		42CD008F203DB2DF00A68352 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CD008E203DB2DF00A68352 /* DetailViewController.swift */; };
 		42E0019B203C2E0500F62639 /* Yellowr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E0019A203C2E0500F62639 /* Yellowr.ttf */; };
+		42EEF3EB204099A900A4C84F /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EEF3EA204099A900A4C84F /* NoticeViewController.swift */; };
 		42F6408920306AF1004A5BB7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408820306AF1004A5BB7 /* ReportViewController.swift */; };
 		42F6408B203197AD004A5BB7 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408A203197AD004A5BB7 /* ReportTableViewCell.swift */; };
 		42F6408D2031A41D004A5BB7 /* InfoUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F6408C2031A41D004A5BB7 /* InfoUserViewController.swift */; };
@@ -76,6 +77,7 @@
 		42CD008C203DB26700A68352 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		42CD008E203DB2DF00A68352 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42E0019A203C2E0500F62639 /* Yellowr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yellowr.ttf; sourceTree = "<group>"; };
+		42EEF3EA204099A900A4C84F /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		42F6408820306AF1004A5BB7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		42F6408A203197AD004A5BB7 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		42F6408C2031A41D004A5BB7 /* InfoUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoUserViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				42CD008A203DB24400A68352 /* ZoomTransitioningDelegate.swift */,
 				42CD008C203DB26700A68352 /* PhotoCell.swift */,
 				42CD008E203DB2DF00A68352 /* DetailViewController.swift */,
+				42EEF3EA204099A900A4C84F /* NoticeViewController.swift */,
 			);
 			path = ChupitApp;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				932F0EF12037176D00195510 /* MathUtils.swift in Sources */,
 				93CB57162035DEB00026EBAF /* Animations.swift in Sources */,
 				4215148C202D94A3000E7AB9 /* UserViewCell.swift in Sources */,
+				42EEF3EB204099A900A4C84F /* NoticeViewController.swift in Sources */,
 				42A8F0EA2029FE8C00438B70 /* MyUtils.swift in Sources */,
 				936AB67B203C6C67003D7D12 /* ScenekitGameViewController.swift in Sources */,
 				42A8F0BC2029EEA800438B70 /* AppDelegate.swift in Sources */,
@@ -527,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5928G56A2S;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
 				INFOPLIST_FILE = ChupitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;
@@ -542,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5928G56A2S;
+				DEVELOPMENT_TEAM = L4CBTPH6UD;
 				INFOPLIST_FILE = ChupitApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.ChupitApp;

@@ -729,4 +729,8 @@ extension GameViewController: UICollectionViewDataSource, UICollectionViewDelega
         animation.repeatCount = Float.infinity
         view.layer.add(animation, forKey: "pulsing")
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }

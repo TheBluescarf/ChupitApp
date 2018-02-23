@@ -397,5 +397,9 @@ extension ViewController: UICollectionViewDataSource, UIScrollViewDelegate, UICo
             })
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 

@@ -90,7 +90,9 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         return self.categoryImageView
     }
     
-    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
 }
 
