@@ -114,9 +114,14 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
                     })
                 } else {
                     self.delegate?.winOrLoseBeforeAnimation!(value: "Lose")
+                    loseAnimation(self.scnScene, onFinished: { (finished) in
+                        DispatchQueue.main.async {
+                            self.delegate?.winPick!(win: false)
+                            self.delegate?.hideChoices!(hide: false)
+                        }
+                    })
                     //some lose animation stuffs
-                    self.delegate?.winPick!(win: false)
-                    self.delegate?.hideChoices!(hide: false)
+                    
                 }
                 if self.game.state == .gameOver {
                     self.delegate?.goToReportController!()

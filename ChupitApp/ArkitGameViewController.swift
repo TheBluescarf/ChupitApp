@@ -145,20 +145,6 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
             self.cardNode.isHidden = false
             moveUpAndRotateCard(self.cardNode, cameraEulers, nil, onFinished: { (finished) in
-                //                DispatchQueue.main.async {
-                ////                    self.delegate?.hideChoices!(hide: false)
-                //                    if (color == 0 && card.color == "red") || (color == 1 && card.color == "black") {
-                //                        self.delegate?.winPick!(win: true)
-                //                        //some win animation
-                //                    } else {
-                //                        self.delegate?.winPick!(win: false)
-                //                        //some lose animation
-                //                    }
-                //                    if self.game.state == .gameOver {
-                //                        self.delegate?.goToReportController!()
-                //                    }
-                //                }
-                //            })
                 DispatchQueue.main.async {
                     if (color == 0 && card.color == "red") || (color == 1 && card.color == "black") {
                         //some win animation stuffs
@@ -176,10 +162,14 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
                             })
                         })
                     } else {
-                        //some lose animation stuffs
-                        self.delegate?.winPick!(win: false)
-                        self.delegate?.hideChoices!(hide: false)
                         self.delegate?.winOrLoseBeforeAnimation!(value: "Lose")
+                        loseAnimation(self.scnScene, self.arscnView.pointOfView!, onFinished: { (finished) in
+                            DispatchQueue.main.async {
+                                self.delegate?.winPick!(win: false)
+                                self.delegate?.hideChoices!(hide: false)
+                            }
+                        })
+                        //some lose animation stuffs
                     }
                 }
             })
