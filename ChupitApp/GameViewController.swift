@@ -442,7 +442,10 @@ class GameViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
-    
+    func deckTapped() {
+        print("deck tapped")
+        //deck premuto nella scena //// delegate
+    }
     
     func showCard() {
         if let choice = choice {

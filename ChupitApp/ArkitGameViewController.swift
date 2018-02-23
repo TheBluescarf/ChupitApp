@@ -208,6 +208,8 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
         let firstHitTest = arscnView.hitTest(location, options: nil)
         if firstHitTest.first?.node.name == "ARCube" {
             delegate?.switchController!(type: "SCN")
+        } else if firstHitTest.first?.node.name == "deck" {
+            delegate?.deckTapped!()
         } else {
             guard game.state == .initializing else { return }
             let hitTest = arscnView.hitTest(location, types: .existingPlaneUsingExtent)
@@ -217,6 +219,7 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
                 let yTranslation = translation.y
                 let zTranslation = translation.z
                 cardBoxNode = SCNScene(named: "ChupitApp.scnassets/Game.scn")!.rootNode.childNode(withName: "deck_full", recursively: true)!
+                cardBoxNode.name = "deck"
                 cardBoxNode.position = SCNVector3Make(xTranslation, yTranslation, zTranslation)
                 scaleNodeForARKit(cardBoxNode)
                 cardBoxNodeFullScale = cardBoxNode.scale.y * 0.5
