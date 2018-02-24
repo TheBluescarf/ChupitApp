@@ -45,6 +45,7 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
             delegate?.hideChoices!(hide: true)
         }
          delegate?.showTrackingLabel!(hide: false)
+   //     toggleTorch(on: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,6 +89,34 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
     func configureLighting() {
         arscnView.autoenablesDefaultLighting = true
         arscnView.automaticallyUpdatesLighting = true
+    }
+    
+    func toggleTorch(on: Bool) {
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video)
+            else {return}
+        
+        if device.hasTorch {
+            do {
+                try device.lockForConfiguration()
+                
+                if on {
+                    device.torchMode = .on
+                    do {
+                        try device.setTorchModeOn(level: 1.0)
+                    } catch {
+                        print(error)
+                    }
+                } else {
+                    device.torchMode = .off
+                }
+                
+                device.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
     }
     
     func choiceButton(color: Int) {
@@ -241,11 +270,11 @@ extension ArkitGameViewController: ARSCNViewDelegate {
             return
         }
         
-        let planeWidth = CGFloat(planeAnchor.extent.x)
-        let planeHeight = CGFloat(planeAnchor.extent.z)
+        let planeWidth = CGFloat(0.2)
+        let planeHeight = CGFloat(0.2)
         let planeGeometry = SCNPlane(width: planeWidth, height: planeHeight)
         
-        planeGeometry.materials.first?.diffuse.contents = UIColor.red
+        planeGeometry.materials.first?.diffuse.contents = "ChupitApp.scnassets/mirino2.png"
         
         let planeNode = SCNNode(geometry: planeGeometry)
         let x = CGFloat(planeAnchor.center.x)

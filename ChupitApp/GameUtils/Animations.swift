@@ -23,10 +23,10 @@ func winAnimation(_ scene: SCNScene, _ cameraNode: SCNNode? = nil, onFinished: @
     case .ARKit:
         let node = SCNScene(named: "ChupitApp.scnassets/balloon.dae")!.rootNode.childNode(withName: "Circle", recursively: true)!
         node.geometry?.materials.first?.diffuse.contents = UIColor.random()
-        let randomX = Float.random(min: -0.2, max: 0.2)
-        node.position = SCNVector3Make(randomX, -1.3, -1)
+        let randomX = Float.random(min: -0.7, max: 0.7)
+        node.position = SCNVector3Make(randomX, -1.3, -2)
         node.name = "balloon"
-        node.scale = SCNVector3Make(node.scale.x * 0.5, node.scale.y * 0.5, node.scale.z * 0.5)
+        node.scale = SCNVector3Make(node.scale.x * 0.7, node.scale.y * 0.7, node.scale.z * 0.7)
         cameraNode!.addChildNode(node)
         GameUtils.shared.spawnedBaloons += 1
         node.runAction(SCNAction.sequence([

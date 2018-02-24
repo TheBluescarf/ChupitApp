@@ -166,7 +166,7 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
         if let result = hitTest.first {
             if result.node.name == "SCNCube" {
                  if !ARWorldTrackingConfiguration.isSupported {
-                    let alert = UIAlertController(title: "AR error", message: "This app requires world tracking. World tracking is only available on iOS devices with A9 processor or newer.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "ARKit Error", message: "World tracking is only available on iOS devices with A9 processor or newer.", preferredStyle: .alert)
                     let alertAction = UIAlertAction(title: "Ok", style: .default)
                     alert.addAction(alertAction)
                     present(alert, animated: true)
