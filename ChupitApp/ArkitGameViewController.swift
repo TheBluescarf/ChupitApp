@@ -212,14 +212,13 @@ class ArkitGameViewController: UIViewController, GameInteractionProtocol {
                 let zTranslation = translation.z
                 cardBoxNode = SCNScene(named: "ChupitApp.scnassets/Game.scn")!.rootNode.childNode(withName: "deck_full", recursively: true)!
                 cardBoxNode.name = "deck"
-                cardBoxNode.position = SCNVector3Make(xTranslation, yTranslation, zTranslation)
+                cardBoxNode.position = SCNVector3Make(xTranslation, yTranslation+0.1, zTranslation)
                 scaleNodeForARKit(cardBoxNode)
                 cardBoxNodeFullScale = cardBoxNode.scale.y * 0.5
                 DispatchQueue.main.asyncAfter(deadline: .now()+0.1, execute: {
                     self.reduceDeckDimension(byValue: Float(52 - self.deck.numberOfCardsRemaining()))
                 })
                 print("remaining cards: ", deck.numberOfCardsRemaining())
-                print("fullscale: ", cardBoxNodeFullScale)
                 cardBoxNode.eulerAngles = arscnView.pointOfView!.eulerAngles
                 cardBoxNode.eulerAngles.x = 0
                 scnScene.rootNode.addChildNode(cardBoxNode)
