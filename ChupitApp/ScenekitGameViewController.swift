@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import SceneKit
+import ARKit
 
 class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
 
@@ -42,6 +43,7 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
                 })
             }
         }
+        
        
         // Do any additional setup after loading the view.
         
@@ -163,7 +165,14 @@ class ScenekitGameViewController: UIViewController, GameInteractionProtocol {
         let hitTest = scnView.hitTest(location, options: nil)
         if let result = hitTest.first {
             if result.node.name == "SCNCube" {
-                delegate?.switchController!(type: "AR")
+                 if !ARWorldTrackingConfiguration.isSupported {
+                    let alert = UIAlertController(title: "AR error", message: "This app requires world tracking. World tracking is only available on iOS devices with A9 processor or newer.", preferredStyle: .alert)
+                    let alertAction = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(alertAction)
+                    present(alert, animated: true)
+                } else {
+                    delegate?.switchController!(type: "AR")
+                }
             } else if result.node.name == "deck_full" {
                 delegate?.deckTapped!()
             }

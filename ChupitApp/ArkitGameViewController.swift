@@ -245,7 +245,7 @@ extension ArkitGameViewController: ARSCNViewDelegate {
         let planeHeight = CGFloat(planeAnchor.extent.z)
         let planeGeometry = SCNPlane(width: planeWidth, height: planeHeight)
         
-        planeGeometry.materials.first?.diffuse.contents = UIColor.cyan
+        planeGeometry.materials.first?.diffuse.contents = UIColor.red
         
         let planeNode = SCNNode(geometry: planeGeometry)
         let x = CGFloat(planeAnchor.center.x)
