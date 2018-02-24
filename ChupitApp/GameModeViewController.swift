@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -92,7 +93,40 @@ class GameModeViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         iconImageView.alpha = 0
         bgImageView.alpha = 0
         playButton.alpha = 0
-        messageAnimation(string: "Selfie Time", substring: "be prepared!\nTake your selfies!")
+        
+        if AVCaptureDevice.authorizationStatus(for: .video) == .authorized {
+            messageAnimation(string: "Selfie Time", substring: "be prepared!\nTake your selfies!")
+        }
+        else {
+            showRequestCamera()
+        }
+    }
+    
+    func showRequestCamera() {
+        AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted) in
+            if granted {
+                self.messageAnimation(string: "Selfie Time", substring: "be prepared!\nTake your selfies!")
+            } else {
+                self.showCameraRequestAlert()
+            }
+        })
+    }
+    
+    func showCameraRequestAlert() {
+        let alert = UIAlertController(title: "Camera Access Request", message: "To play this game, please allow camera access!", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+            DispatchQueue.main.async {
+                UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:])
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            action in
+            self.showCameraRequestAlert()
+        }))
+        
+        self.present(alert, animated: true)
     }
     
     @objc func cancelPicker(_ sender: UIButton) {
