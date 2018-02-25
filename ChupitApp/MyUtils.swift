@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 extension UIView {
     
     @IBInspectable
@@ -46,7 +45,7 @@ class User {
 
 final class Singleton {
     
-    var playersNumber: Int = 0
+    var playersNumber: Int = 2
     
     var users: [User] = []
     var deck = Deck()
